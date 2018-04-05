@@ -1,0 +1,66 @@
+.header{
+	width: 100%;
+	background: #36B6BB;
+	color:#fff;
+	height: 55px;
+	z-index: 100;
+}
+.footer,.footer{
+	text-align: center;
+	color: #547D7E;
+	background: #E8EAEA;
+	width: 100%;
+	bottom: 0;
+	font-size: 12px;
+	line-height: 1.5;
+	padding: 10px 0;
+}
+.container{
+	width: 920px;
+	display: block;
+	margin:auto;
+	overflow: hidden;
+}
+.header .container{
+	color:#fff;
+	padding: 12px 0;
+}
+.header .container img{
+	float: left;
+}
+.header .container button{
+	float: right;
+	font-size: 16px;
+}
+.article{
+	width: 700px;
+	background: #fff;
+	min-height: 850px;
+	margin-top:20px;
+	bottom: 30px;
+	float: right;
+}
+.aside{
+	width: 200px;
+	background: #fff;
+	float: left;
+	min-height: 870px;
+}
+
+.nav{
+	padding: 20px 0;
+}
+.nav li{
+	width: 100%;
+	background:#fff;
+	text-align: center;
+	line-height: 60px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.nav li:hover{
+	background: #36B6BB;
+}
+.nav li:hover a{
+	color: #fff
+}

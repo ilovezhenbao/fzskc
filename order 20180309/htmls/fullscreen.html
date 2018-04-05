@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>全屏图片</title>
+	<style>
+		body{
+			  background: url(./images/1.jpg) no-repeat center center fixed;
+			  background-size: cover;
+			  animation: changeBg 25s infinite;
+			  transition: background 2s ease-in-out;
+		}
+		@keyframes changeBg{
+			20%{
+				background: url(./images/2.jpg) no-repeat center center fixed;
+			  background-size: cover;
+			}
+			40%{
+				background: url(./images/3.jpg) no-repeat center center fixed;
+			  background-size: cover;
+			}
+			60%{
+				background: url(./images/4.jpg) no-repeat center center fixed;
+			  background-size: cover;
+			}
+			80%{
+				background: url(images/5.jpg) no-repeat center center fixed;
+			  background-size: cover;
+			}
+		}
+	</style>
+</head>
+<body>
+	
+</body>
+</html>

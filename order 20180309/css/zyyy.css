@@ -1,0 +1,75 @@
+.time,
+.room,
+.computer{
+    width: 90%;
+    margin: 10px auto;
+    padding: 15px;
+    overflow: hidden;
+}
+
+h3{
+    display: inline-block;
+    margin: 50px 0;
+    margin-left: 50px;
+    font-size: 16px;
+}
+
+h4 {
+    margin: 0px;
+    padding: 0px;
+    margin-left:40px;
+    font-size: 18px;
+}
+
+.time dl,
+.room dl,
+.computer dl{
+    float: left;
+    width: 160px;
+    margin: 10px 8px;
+}
+.time dt img,
+.room dt img,
+.computer dt img {
+    text-align:center;
+}
+
+.time dt span,
+.room dt span,
+.computer dt span {
+    display: block;
+}
+
+
+.checkboxlist {
+    display: inline-block;
+}
+
+.checkboxlist tr{
+    display:inline-block;
+    float:left;
+}
+
+input[type='checkbox'] + label {
+    padding: 7px 15px;
+}
+
+input[type='checkbox']:checked + label {
+    background: #36B6BB;
+    color: #fff;
+    border-color: #F0F3F5;
+    border-radius: 4px;
+}
+
+input[type='checkbox']:disabled + label {
+    background: #999;
+    color: #F0F3F5;
+}
+
+.yycode {
+    font-size: 30px;
+    color: red;
+    line-height: 40px;
+    padding-left: 20px;
+}
+

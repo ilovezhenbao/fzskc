@@ -1,0 +1,100 @@
+/*大于1650的显示器(显示宽度），固定最大宽度*/
+@media (min-width: 1650px) {
+    .container {
+        width: 1400px;
+    }
+  
+}.banner{
+    background-color: #FFFFFF;
+    width: 100%;
+    display: block;
+    margin:20px auto;
+    overflow: hidden;
+}
+.swiper-container {
+    width: 100%;
+    height: 450px;
+}
+
+.img1{
+    width: inherit;
+    height: inherit;
+    background-image: url("../images/1.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.img2{
+    width: inherit;
+    height: inherit;
+    background-image: url("../images/2.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.img3{
+    width: inherit;
+    height: inherit;
+    background-image: url("../images/3.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.img4{
+    width: inherit;
+    height: inherit;
+    background-image: url("../images/4.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.notice{
+    float: left;
+    font-size:16px;
+    background-color: #FFFFFF;
+    width: 49%;
+    display: block;
+    margin: 20px 0;
+    overflow: auto;
+}
+.process{
+    float: right;
+    background-color: #FFFFFF;
+    width: 49%;
+    display: block;
+    margin: 20px 0;
+}
+.notice h2,.process h2{
+    color: #000000;
+    text-indent: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+    font-size: large;
+}
+.process img{
+    width: 96%;
+    margin: 10px 2%;
+}
+
+.notices li{
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+.notice a{
+    color: #5AC1C5;
+    line-height: 250%;
+}
+
+.notices li:nth-child(odd)
+{
+    background-color:#F9FAFC;
+}
+.notices li:nth-child(even)
+{
+    background-color:#FFFFFF;
+}

@@ -1,0 +1,232 @@
+﻿/*---feedback--*/
+.right_form {
+    margin: 0 auto 0 auto;
+    margin-left: 30px;
+}
+
+    .right_form dt {
+        vertical-align: top;
+        padding-top: 4px;
+        width: 160px;
+        display: inline-block;
+        margin: 0px;
+        text-align: right;
+        font-size: 15px;
+        font-weight: 500;
+        font-family: Arial, "Microsoft YaHei", "微软雅黑", sans-serif;
+        line-height: 22px;
+    }
+
+        .right_form dt span {
+            display: block;
+            font-weight: normal;
+        }
+
+
+
+
+    .right_form input[type="text"],
+    .right_form input[type="password"],
+    .right_form input[type="file"],
+    .right_form select {
+        width: 260px;
+    }
+
+    .right_form textarea {
+        width: 460px;
+    }
+
+
+/*940以下导航菜单缩小*/
+@media (max-width: 1024px) {
+    .right_form {
+        margin-left: 10px;
+    }
+
+        .right_form dt {
+            width: 120px;
+        }
+
+        .right_form input[type="text"],
+        .right_form input[type="password"],
+        .right_form input[type="file"],
+        .right_form select {
+            width: 140px;
+        }
+
+        .right_form textarea {
+            width: 280px;
+        }
+}
+
+.right_form * {
+}
+
+.right_form h2 {
+    font-size: 18px;
+    line-height: 28px;
+    color: #666;
+    margin: 0px;
+    padding: 0px;
+}
+
+.right_form span.msgstr {
+    color: red;
+}
+
+.right_form dl, .right_form .userpic {
+    clear: left;
+    margin: 0 auto;
+    padding-top: 6px;
+}
+
+    .right_form dl span {
+        font-size: 13px;
+        color: #888;
+        padding-left: 5px;
+    }
+
+.right_form dd {
+    display: inline-block;
+    margin: 0px;
+    padding-left: 8px;
+    line-height: 30px;
+}
+
+    .right_form dd span.fileup {
+        display: block;
+    }
+
+    .right_form dd a {
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+.right_form textarea {
+    height: 120px;
+}
+
+.right_form input[type="text"],
+.right_form input[type="password"],
+.right_form input[type="file"],
+.right_form select,
+.right_form textarea {
+    padding: 10px;
+    border:1px solid #777;
+    background: #f0f0f0;
+    outline: none;
+    color: #777;
+    font-size: 14px;
+}
+
+.right_form .short input[type="text"] {
+    width: 65px;
+}
+
+.right_form input[type="checkbox"] {
+    padding: 10px;
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    border: none;
+    outline: none;
+}
+
+.right_form a.submit,
+.right_form input.submit,
+.right_form input[type="submit"] {
+    display: inline-block;
+    border: none;
+    margin-top: 15px;
+    padding: 15px 0px 15px 0px;
+    width: 120px;
+    background: #F5EAE4;
+    outline: none;
+    color: #ffffff;
+    font-family: 微软雅黑,宋体;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    -webkit-appearance: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.right_form a.submit,
+.right_form input[type="submit"] { /*土*/
+    background: #FFC476;
+}
+
+    .right_form a.submit:hover,
+    .right_form input[type="submit"]:hover {
+        background: orange;
+    }
+
+    .right_form a.bg0,
+    .right_form input.bg0,
+    .right_form input[type="submit"].bg0 { /*蓝*/
+        background: #8BD5E0;
+    }
+
+        .right_form a.bg0:hover,
+        .right_form input.bg0:hover,
+        .right_form input[type="submit"].bg0:hover {
+            background: #00D2DF;
+        }
+
+    .right_form a.bg1,
+    .right_form input.bg1,
+    .right_form input[type="submit"].bg1 { /*红*/
+        background: #FEA390;
+    }
+
+        .right_form a.bg1:hover,
+        .right_form input.bg1:hover,
+        .right_form input[type="submit"].bg1:hover {
+            background: #EA9B84;
+        }
+
+    .right_form a.submit,
+    .right_form input[type="submit"],
+    .right_form a.bg2,
+    .right_form input.bg2,
+    .right_form input[type="submit"].bg2 { /*绿*/
+        background: #63CCA1;
+    }
+
+        .right_form a.submit:hover,
+        .right_form input[type="submit"]:hover,
+        .right_form a.bg2:hover,
+        .right_form input.bg2:hover,
+        .right_form input[type="submit"].bg2:hover {
+            background: #53B68D;
+        }
+
+.right_form input:disabled,
+.right_form select:disabled,
+.right_form textarea:disabled { 
+    border: 1px dashed #ccc; 
+    background: #fcfcfc; 
+    color: #ccc; 
+}
+
+
+.right_post dt {
+    width: 80px;
+}
+
+/*DD中的小表单*/
+.ddform {
+    border: 1px solid #aacfe4;
+    width: 520px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+    .ddform dt {
+        width: 80px;
+    }

@@ -1,0 +1,78 @@
+.article {
+    background: #F0F3F5;
+}
+.myprofile{
+    background-color: #FFFFFF;
+    margin: 0 2.5%;
+    width: 95%;
+    height: 300px;
+    box-shadow: 3px 3px 3px 3px #ccc
+}
+
+.notice{
+    background-color: #FFFFFF;
+    margin: 0 2.5%;
+    width: 95%;
+    height: 500px;
+    box-shadow: 3px 3px 3px 3px #ccc
+}
+
+.myprofile h2{
+    color: #000000;
+    text-indent: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+    font-size: large;
+}
+
+.myprofile_left{
+    padding-top:15px;
+    margin-right: 200px;
+    height: auto;
+    float: left;
+    line-height: 200%;
+    padding-left: 30px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.myprofile_right{
+    padding-top: 15px;
+    height: auto;
+    float: left;
+    line-height: 200%;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+.notice h2{
+    color: #000000;
+    text-indent: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+    font-size: large;
+}
+
+.notices li{
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+.notice a{
+    color: #5AC1C5;
+    line-height: 250%;
+}
+
+.notices li:nth-child(odd)
+{
+    background-color:#F9FAFC;
+}
+.notices li:nth-child(even)
+{
+    background-color:#FFFFFF;
+}

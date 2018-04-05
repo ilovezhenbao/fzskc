@@ -1,0 +1,92 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="MasterPage, EswisOrderByBeaming" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Fx 高校资源预约管理系统</title>
+    <meta http-equiv="keywords" content="资源预约,学生工作,综合服务,服务平台,信息系统,管理系统" />
+    <meta http-equiv="author" content="华南师范大学,唐小煜,beaming@qq.com" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="css/init.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/form2_style.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class='header'>
+            <div class="container">
+                <img src="images/logo2.png" alt="logo" />
+                <div style="float:right;">
+
+                    <asp:LinkButton ID="login" runat="server" visible="false" OnClick="login_Click">登录</asp:LinkButton>
+                    <asp:LinkButton ID="myinf" runat="server" visible="false" OnClick="myinf_Click">我的信息</asp:LinkButton>
+                    <asp:LinkButton ID="logout" runat="server" visible="false" OnClick="logout_Click">退出登录</asp:LinkButton>
+                    <a href="Default.aspx">首页</a>
+                </div>
+            </div>
+        </div>
+        <div class="container maincontainer">
+            <asp:Panel ID="defaultdiv" runat="server" Visible="false">
+                <asp:ContentPlaceHolder ID="cph_default" runat="server"></asp:ContentPlaceHolder>
+            </asp:Panel>
+
+            <div class='aside' id="leftdiv" runat="server">
+                    <div class="weather-test">
+			            <iframe src="https://www.seniverse.com/weather/weather.aspx?uid=U79DF7CAE1&cid=CHGD000000&l=zh-CHS&p=SMART&a=1&u=C&s=4&m=0&x=1&d=1&fc=00AFDB&bgc=FFFFFF&bc=&ti=0&in=0&li=" frameborder="0" scrolling="no" width="100%"  height="30" allowTransparency="true"></iframe>
+                    </div>
+                <div id="nav" runat="server" class="nav">
+                </div>
+                <asp:ContentPlaceHolder ID="cph_left" runat="server"></asp:ContentPlaceHolder>
+            </div>
+
+            <div class="article" id="rightdiv" runat="server">
+                <h2 id="right_h" runat="server" class="title">分页标题</h2>
+                <asp:Label ID="SysErrMsg" runat="server" />
+                <div class="content">
+                    <asp:ContentPlaceHolder ID="cph_r_expand" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <asp:ContentPlaceHolder ID="cph_right" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div class="footer">
+            <asp:Label ID="msg_sysinf" runat="server" />
+            <br />
+            <asp:Label ID="msg_unitinf" runat="server" />
+        </div>
+    </form>
+    <script>
+        window.onload = function () {
+            (function checklogin() {
+                var err = document.getElementById('ctl00_SysErrMsg');
+                if (err && err.innerHTML) {
+                    alert(err.innerHTML);
+                    window.location.href = 'login.aspx'
+                }
+            })()
+
+            //var keepHeight = function () {
+            //    var aside = document.getElementsByClassName('aside')[0];
+            //    if (aside) {
+            //        var maincontainer = document.getElementsByClassName('article')[0];
+            //        if (aside.offsetHeight >= maincontainer.offsetHeight) {
+            //            maincontainer.style.height = (aside.offsetHeight - 20) + 'px'
+            //        } else {
+            //            aside.style.height = maincontainer.offsetHeight + 'px';
+            //        };
+            //    }
+            //}
+            //keepHeight();
+
+            /*var active = document.getElementById('menuList').getElementsByClassName('active')[0];
+            if (active) {
+                active.getElementsByClassName('submenu')[0].style.display = 'block';
+            }*/
+        }
+    </script>
+</body>
+</html>

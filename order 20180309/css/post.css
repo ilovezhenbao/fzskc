@@ -1,0 +1,91 @@
+﻿.list_li, .list_main {
+    margin: 0px 20px;
+    line-height: 30px;
+}
+
+    .list_main, .list_main p {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+        .list_main p {
+            text-indent: 2em;
+        }
+
+        .list_main dd a {
+            margin-right: 8px;
+        }
+
+.grid2of3 .right_form h1,
+.grid2of3 .posts_title {
+    margin: 0px;
+    font-size: 22px;
+    line-height: 35px;
+}
+
+    .grid2of3 .right_form h1 a,
+    .grid2of3 .posts_title a {
+        margin: 0px 4px 0px 4px;
+        font-size: 14px;
+        font-weight: normal;
+        text-indent: 0px;
+    }
+
+.grid2of3 .right_form h2,
+.grid2of3 .posts_vtitle {
+    margin: 0px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    line-height: 24px;
+    text-indent: 2em;
+    font-weight: normal;
+    color: #666666;
+}
+
+.grid2of3 .right_form h2,
+.grid2of3 .posts_vtitle {
+    clear: both;
+    border-bottom: 1px dashed #059;
+}
+
+.grid2of3 .right_form h3 {
+    margin: 5px 0px 10px 0px;
+    border-bottom: 1px solid #b7ddf2;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.list_li dl,
+.list_li dt,
+.list_li dd {
+    margin: 0px;
+    padding: 0px;
+}
+
+    .list_li dt, .list_main dt,
+    .list_li dt a, .list_main dt a {
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+.list_li dd {
+    margin-left: 30px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.posts_annex {
+    margin: 30px;
+}
+
+.right_form hr {
+    clear: both;
+    margin: 0px;
+    margin-bottom: 8px;
+    padding: 0px;
+    padding-top: 8px;
+    height: 1px;
+    border: none;
+    border-bottom: 1px solid #b7ddf2;
+}

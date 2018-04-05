@@ -1,0 +1,259 @@
+﻿/*整体区块对齐处理*/
+/*框块宽高调节与自适应*/
+.container {
+    text-align: center;
+    margin: 0px auto;
+    padding: 0.5%;
+    width: 1100px;
+}
+
+.h_menu, .copy,
+.grid1of3, .grid2of3 {
+    text-align: left;
+}
+
+.grid_sys {
+    text-align: center;
+}
+
+.h_menu, .copy,
+.grid1of3, .grid2of3 {
+    margin-left: 0.5%;
+}
+
+.grid1of3, .grid2of3 {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+.mp_main .grid1of3, .mp_main .grid2of3 {
+    height: 250px;
+    overflow: hidden;
+}
+
+.mp_main .colorul {
+    overflow: visible;
+}
+
+/*默认宽度*/
+.grid1of3 {
+    width: 49%;
+}
+
+.grid2of3 {
+    width: 99%;
+}
+
+
+.mp_slave .grid1of3 {
+    display:none;
+    width: 18%;
+}
+
+.mp_slave .grid2of3 {
+    /*width: 80.3%;*/
+}
+
+.mp_slave .grid1of3 h1 {
+    font-size: 20px;
+}
+
+/*Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .grid1of3 {
+        width: 49%;
+    }
+
+    .grid2of3 {
+        width: 99%;
+    }
+
+    /*.mp_slave .grid1of3 {
+        width: 18%;
+    }
+
+    .mp_slave .grid2of3 {
+        width: 80%;
+    }*/
+}
+
+/*大于1650的显示器(显示宽度），固定最大宽度并居中*/
+@media (min-width: 1650px) {
+    /*.container {
+        width: 1400px;
+    }*/
+}
+
+/*880以上三栏显示，适当调整功能页面比例*/
+@media (min-width: 900px) and (max-width: 1200px) {
+
+    /*.mp_slave .grid1of3 {
+        width: 21.5%;
+    }
+
+    .mp_slave .grid2of3 {
+        width: 76.3%;
+    }*/
+}
+
+/*740~880之间两列显示*/
+@media (min-width: 800px) and (max-width: 900px) {
+    .grid1of3 {
+        width: 49%;
+    }
+
+    .grid2of3 {
+        width: 99%;
+    }
+
+    /*.mp_slave .grid1of3 {
+        width: 24%;
+    }
+
+    .mp_slave .grid2of3 {
+        width: 73.8%;
+    }*/
+}
+
+
+/* 1024以下缩小字体 */
+@media (max-width: 1024px) {
+
+    .mp_slave .grid1of3 h1 {
+        font-size: 18px;
+    }
+
+    .signin_form a.submit,
+    .signin_form input.submit {
+        font-size: 14px;
+    }
+
+    ul.postlist li, ol.postlist li {
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .grid1of3 h2, .grid2of3 h2 {
+        font-size: 20px;
+    }
+
+        .grid1of3 h2 a, .grid2of3 h2 a {
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+    .copy{
+        font-size:13px;
+        line-height:22px;
+    }
+
+    /*首页磁贴*/
+    .colorul li a {
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+    .colorul li span {
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
+
+/*980以下导航菜单缩小*/
+@media (max-width: 980px) {
+    .menu li a {
+        font-size: 15px;
+        font-weight: normal;
+        padding: 10px 10px;
+    }
+
+    .menu ul {
+        top: 28px;
+    }
+
+        .menu ul li a {
+            font-size: 13px;
+        }
+}
+
+/*800以下单列显示，字体调整*/
+@media (max-width: 800px) {
+    .grid1of3, .grid2of3 {
+        width: 99%;
+    }
+
+    .menu li a {
+        font-size: 13px;
+        font-weight: normal;
+        padding: 10px 6px;
+    }
+
+    .menu ul {
+        top: 26px;
+    }
+
+        .menu ul li a {
+            font-size: 12px;
+        }
+
+    .grid1of3 h2, .grid2of3 h2 {
+        font-size: 20px;
+    }
+
+        .grid1of3 h2 a, .grid2of3 h2 a {
+            font-size: 13px;
+            text-decoration: none;
+        }
+
+    /*.mp_slave .grid1of3 {
+        display: none;
+    }
+
+    .mp_slave .grid2of3 {
+        width: 99%;
+    }*/
+
+    .mp_slave .grid1of3 h1 {
+        font-size: 18px;
+    }
+
+    .signin_form a.submit,
+    .signin_form input.submit {
+        font-size: 14px;
+    }
+
+    ul.postlist li, ol.postlist li {
+        font-size: 13px;
+        line-height: 26px;
+    }
+
+    .colorul li a {
+        font-size: 13px;
+        line-height: 26px;
+    }
+
+    .colorul li span {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .copy{
+        font-size:12px;
+        line-height:20px;
+    }
+}
+
+/*1000以下自适应*/
+@media (max-width: 1100px) {
+    .container {
+        width: 99%;
+    }
+}
+
+/*360以下固定最小宽度*/
+@media (max-width: 360px) {
+    .container {
+        width: 360px;
+    }
+}

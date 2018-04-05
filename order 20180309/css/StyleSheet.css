@@ -1,0 +1,635 @@
+﻿body {
+    margin: 0px;
+    background: #F8F1EB;
+    font-size: 14px;
+    font-family: SimSun, "宋体", serif;
+}
+
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/*整体样式*/
+.hide {
+    display: none;
+}
+
+.clearfix, .clear, .cl {
+    clear: both;
+}
+
+.msgstr, .sysmsg {
+    color: red;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.list-inline {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+}
+
+/*顶部菜单*/
+.h_menu {
+}
+
+nav {
+    display: block;
+    margin-bottom: 1.5%;
+}
+
+.menu {
+    background: #ffffff;
+    display: block;
+}
+
+    .menu li {
+        display: inline-block;
+        position: relative;
+        z-index: 100;
+        margin-left: -6px;
+    }
+
+        .menu li:first-child {
+            margin-left: 0;
+        }
+
+        .menu li.color1 a {
+            border-bottom: 5px solid #9DCCA0;
+        }
+
+        .menu li.color2 a {
+            border-bottom: 5px solid #F79F8B;
+        }
+
+        .menu li.color3 a {
+            border-bottom: 5px solid #8BD5E0;
+        }
+
+        .menu li.color4 a {
+            border-bottom: 5px solid #FFC476;
+        }
+
+        .menu li.color5 a {
+            border-bottom: 5px solid #1B90D4;
+        }
+
+        .menu li.color6 a {
+            border-bottom: 5px solid #9DCCA0;
+        }
+
+        .menu li a {
+            display: block;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: bold;
+            padding: 15px 15px;
+            color: #5d5d5d;
+            -webkit-transition: all 0.2s ease-in-out 0s;
+            -moz-transition: all 0.2s ease-in-out 0s;
+            -o-transition: all 0.2s ease-in-out 0s;
+            -ms-transition: all 0.2s ease-in-out 0s;
+            transition: all 0.2s ease-in-out 0s;
+        }
+
+            .menu li a:hover, .menu li:hover a {
+                color: #ffffff;
+                background: #00D2DF;
+            }
+
+    /*二级菜单*/
+    .menu ul {
+        display: none;
+        margin-top: 13px;
+        padding: 0;
+        position: absolute;
+        top: 41px;
+        left: 0px;
+        background: #ffffff;
+    }
+
+        .menu ul li {
+            display: block;
+            float: none;
+            background: none;
+            margin: 0;
+            padding: 0;
+        }
+
+            .menu ul li a {
+                font-size: 14px;
+                line-height: 1.3em;
+                font-weight: normal;
+                display: block;
+                color: #ffffff;
+                border-left: 0px solid #C03C35;
+                background: #E2534B;
+                padding: 12px 20px;
+                width: 90px;
+            }
+
+                .menu ul li a:hover, .menu ul li:hover > a {
+                    background: #f0f0f0;
+                    border-left: 0px solid #62A29E;
+                    color: #797979;
+                    box-shadow: none;
+                    border-radius: 0px;
+                    -webkit-border-radius: 0px;
+                    -moz-border-radius: 0px;
+                    -o-border-radius: 0px;
+                }
+
+    .menu li:hover > ul {
+        display: block;
+    }
+
+    .menu ul ul {
+        left: 132px;
+        top: 0px;
+    }
+
+
+/*全局颜色设定*/
+/*背景色（浅）*/
+.bg0, .bgcolor0, .bgpink {
+    background: #FFA290; /*红*/
+}
+
+.bg1, .bgcolor1, .bggreen {
+    background: #63CD9F; /*绿*/
+}
+
+.bg2, .bgcolor2, .bgorange {
+    background: #FFC476; /*土*/
+}
+
+.bg3, .bgcolor3, .bgblue {
+    background: #8BD5E0; /*蓝*/
+}
+
+.bg4, .bgcolor4, .bgdeepblue {
+    background: #1B90D4; /*深蓝*/
+}
+
+/*hover 变深*/
+li.bg0:hover {
+    background: #E07B68; /*红*/
+}
+
+li.bg1:hover {
+    background: #3DA57A; /*绿*/
+}
+
+li.bg2:hover {
+    background: orange; /*土*/
+}
+
+li.bg3:hover {
+    background: #00D2DF; /*蓝*/
+}
+
+li.bg4:hover {
+    background: #005D9A; /*深蓝*/
+}
+
+
+/*边框色（深）*/
+.bg0, .bdcolor0, .bdpink {
+    border-top: 8px solid #E07B68; /*红*/
+}
+
+.bg1, .bdcolor1, .bdgreen {
+    border-top: 8px solid #3DA57A; /*绿*/
+}
+
+.bg2, .bdcolor2, .bdorange {
+    border-top: 8px solid orange; /*土*/
+}
+
+.bg3, .bdcolor3, .bdblue {
+    border-top: 8px solid #00D2DF; /*蓝*/
+}
+
+.bg4, .bdcolor4, .bddeepblue {
+    border-top: 8px solid #005D9A; /*深蓝*/
+}
+
+/*磁贴框块设定*/
+.colorul ul,
+.colorul li {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.colorul li {
+    margin-bottom: 13px;
+}
+
+    .colorul li a {
+        display: block;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: Arial, "Microsoft YaHei", "微软雅黑", sans-serif;
+        line-height: 30px;
+        text-decoration: none;
+        padding: 5px 10px 5px 15px;
+    }
+
+    .colorul li span {
+        display: block;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: normal;
+    }
+
+.grid_menu li {
+    margin-bottom: 5px;
+    border-top-width: 4px;
+}
+
+.menu ul li {
+    border-top: none;
+    border-bottom-width: 2px;
+}
+
+    .menu ul li a {
+        padding: 8px 12px;
+    }
+
+.grid_menu li a {
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.right_apps li {
+    border: none;
+    font-size: 15px;
+    line-height: 16px;
+    float: left;
+    margin: 0px 0 26px 2.3%;
+    width: 17.4%;
+}
+
+    .right_apps li a {
+        background: #1B90D4;
+        text-align: center;
+        padding: 12px 2px 13px 2px;
+    }
+
+        .right_apps li a:hover {
+            background: #005D9A;
+        }
+
+
+
+/*全局：各功能框大小设定*/
+.leftgrid {
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+    .leftgrid .signin_form {
+        padding-bottom: 10px;
+    }
+
+.rightgrid {
+    border-top: 8px solid #00D2DF;
+    background: #ffffff;
+    padding: 20px 10px 60px 10px;
+    text-align: left;
+}
+
+.grid1of3 h1, .grid2of3 h1 {
+    margin: 10px 5px 10px 5px;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: Arial, "Microsoft YaHei", "微软雅黑", sans-serif;
+    color: #5d5d5d;
+    text-transform: capitalize;
+}
+
+.mp_slave .grid1of3 h1 {
+    font-size: 22px;
+}
+
+.grid1of3 h2, .grid2of3 h2 {
+    margin: 5px 10px 10px 10px;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: Arial, "Microsoft YaHei", "微软雅黑", sans-serif;
+    color: #5d5d5d;
+    text-transform: capitalize;
+}
+
+    .grid1of3 h2 a, .grid2of3 h2 a {
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+.grid1of3 img, .grid2of3 img {
+    display: inline-block;
+}
+
+img.logo {
+    width: 120px;
+    height: 120px;
+}
+
+.mp_slave img.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.grid1of3 p, .grid2of3 p {
+    margin: 0px;
+    font-size: 14px;
+    color: #5d5d5d;
+    line-height: 1.8em;
+}
+
+
+ul.postlist, ol.postlist {
+    margin: 0px;
+    padding: 0px;
+}
+
+    ul.postlist li, ol.postlist li {
+        margin: 0px;
+        padding: 0px;
+        color: #5d5d5d;
+        font-size: 15px;
+        line-height: 30px;
+        text-decoration: none;
+    }
+
+    ol.postlist li {
+        list-style: decimal;
+        margin-left: 40px;
+    }
+
+    ul.postlist li {
+        list-style: none;
+        margin-left: 20px;
+    }
+
+        ul.postlist li a {
+            text-decoration: none;
+            color: #0094ff;
+        }
+
+            ul.postlist li a:hover {
+                color: #5d5d5d;
+            }
+
+/*系统简介*/
+.grid_sys {
+    border-top: 8px solid #FFC476;
+    background: #ffffff;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+/*登录*/
+.grid_signin {
+    border-top: 8px solid #00D2DF;
+    background: #ffffff;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.signin_form {
+    margin-left: 6px;
+    text-align: justify;
+}
+
+.grid_sys .signin_form {
+    text-align: center;
+}
+
+.signin_form span {
+    display: block;
+    font-size: 14px;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 15px 0px 0px 0px;
+}
+
+.signin_form input[type="text"] {
+    padding: 15px 15px;
+    display: block;
+    width: 91%;
+    background: #F5EAE4;
+    outline: none;
+    color: #5d5d5d;
+    font-size: 13px;
+    border: none;
+    -webkit-appearance: none;
+}
+
+.signin_form input[type="password"] {
+    margin-top: 10px;
+    padding: 15px 15px;
+    display: block;
+    width: 91%;
+    background: #F5EAE4;
+    outline: none;
+    color: #5d5d5d;
+    font-size: 13px;
+    border: none;
+    -webkit-appearance: none;
+}
+
+.signin_form a.submit,
+.signin_form input.submit,
+.signin_form input[type="button"],
+.signin_form input[type="submit"] {
+    display: inline-block;
+    border: none;
+    margin-top: 10px;
+    padding: 12px 0px 12px 0px;
+    width: 48%;
+    background: #F5EAE4;
+    outline: none;
+    color: #ffffff;
+    font-family: 微软雅黑,宋体;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    -webkit-appearance: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+    .signin_form a.bg0,
+    .signin_form input.bg0,
+    .signin_form input[type="button"].bg0,
+    .signin_form input[type="submit"].bg0 { /*蓝*/
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 0px;
+        width: 80%;
+        background: #8BD5E0;
+    }
+
+        .signin_form a.bg0:hover,
+        .signin_form input.bg0:hover,
+        .signin_form input[type="button"].bg0:hover,
+        .signin_form input[type="submit"].bg0:hover {
+            background: #00D2DF;
+        }
+
+    .signin_form a.bg1,
+    .signin_form input.bg1,
+    .signin_form input[type="button"].bg1,
+    .signin_form input[type="submit"].bg1 { /*红*/
+        background: #FEA390;
+    }
+
+        .signin_form a.bg1:hover,
+        .signin_form input.bg1:hover,
+        .signin_form input[type="button"].bg1:hover,
+        .signin_form input[type="submit"].bg1:hover {
+            background: #EA9B84;
+        }
+
+    .signin_form a.bg2,
+    .signin_form input.bg2,
+    .signin_form input[type="button"].bg2,
+    .signin_form input[type="submit"].bg2 { /*绿*/
+        background: #63CCA1;
+    }
+
+        .signin_form a.bg2:hover,
+        .signin_form input.bg2:hover,
+        .signin_form input[type="button"].bg2:hover,
+        .signin_form input[type="submit"].bg2:hover {
+            background: #53B68D;
+        }
+
+
+/*
+    .warning1 { 绿
+        border-top: 8px solid #3DA57A;
+        background-color: #63CD9F;
+    }
+    */
+
+
+.grid_obj {
+    padding: 8px;
+    line-height: 36px;
+    text-align: center;
+}
+
+    .grid_obj h3 {
+        padding: 0px;
+        margin: 0px;
+        padding-left: 6%;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: Arial, "Microsoft YaHei", "微软雅黑", sans-serif;
+        line-height: 28px;
+        text-align: left;
+    }
+
+    .grid_obj input, .grid_obj select {
+        padding: 7px 1px;
+        display: inline block;
+        width: 70%;
+        background: #F5EAE4;
+        outline: none;
+        color: #5d5d5d;
+        font-size: 13px;
+        border: none;
+        -webkit-appearance: none;
+    }
+
+    .grid_obj a {
+        margin-left: 8px;
+        display: inline-block;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+/*左菜单*/
+
+
+.left_menu {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    background: #fff;
+    z-index: 1;
+}
+
+
+    .left_menu li a {
+        display: block;
+        text-decoration: none;
+        color: #5f5f5f;
+        padding: 10px 0px 10px 25px;
+        font-size: 15px;
+        font-weight: 500;
+        font-family: Arial, "Microsoft YaHei", "微软雅黑", sans-serif;
+    }
+
+        .left_menu li.sel a,
+        .left_menu li a:hover {
+            color: #fff;
+            background: #FEA390;
+        }
+
+        .left_menu li a:hover {
+            background: #8BD5E0;
+        }
+
+
+/* start copy */
+.copy {
+    border-top: 4px solid #E07B68;
+    background: #ffffff;
+    color: #5d5d5d;
+    padding: 15px 0px 15px 0px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+    .copy .footleft {
+        float: left;
+    }
+
+        .copy .footleft a {
+            display: block;
+            width: 120px;
+            text-align: center;
+        }
+
+    .copy .footright {
+        float: left;
+        text-align: left;
+    }
+
+    .copy a {
+        color: #E2534B;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+        .copy a:hover {
+            color: #5d5d5d;
+            text-decoration: none;
+        }

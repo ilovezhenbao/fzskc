@@ -1,0 +1,141 @@
+﻿/*右框表格样式*/
+.right_content { clear: both; }
+
+.grid2of3 .right_content h1 { font-size: 22px; color: #5d5d5d; }
+
+.grid2of3 .right_content h2 { font-size: 15px; color: #5d5d5d; }
+
+
+.right_content table { clear: both; margin: 0px auto; margin-top: 10px; width: 99%; border-collapse: collapse; font-size: 14px; }
+
+.right_content .trh table { margin: 0px; margin-left: 10px; width: auto; border: none; border-collapse: collapse; text-align:center;}
+
+    .right_content .trh table td { border: none; }
+
+    .right_content .trh table tr { background: none; }
+
+.right_content table a { white-space: nowrap; }
+
+    .right_content table a.inline { }
+
+.right_content table input[type="text"] { width: 10%; }
+
+.right_content th, .right_form th, .right_showinf th { font-size: 15px; font-weight: 500; font-family: Arial, "Microsoft YaHei", "微软雅黑", sans-serif; text-align: center; }
+
+.right_content tr, .right_form tr { line-height: 28px; background: #f8fbef; /*白*/ }
+
+    .right_content tr.tr0, .right_form tr.tr0, .right_showinf tr th { background: #ecfbd4; /*浅黄*/ }
+
+    .right_content tr.tr1, .right_form tr.tr1, .right_showinf tr td { background: #f8fbef; /*白*/ }
+
+.right_showinf tr { line-height: 28px; border-bottom: 1px solid #328aa4; }
+
+    .right_showinf tr th { width: 85px; }
+
+        .right_showinf tr th a { color: #bbccee; }
+
+            .right_showinf tr th a:hover { color: #cc0000; }
+
+    .right_showinf tr table th { width: auto; }
+
+    .right_showinf tr.trh th { width: 100%; text-align: left; padding-left: 10px; }
+
+    .right_content tr.trh, .right_form tr.trh, .right_showinf tr.trh th { line-height: 30px; background: #328aa4; /*蓝绿*/ color: #fff; white-space: nowrap; }
+
+        .right_content tr.trh a, .right_form tr.trh a, .right_showinf tr.trh a { color: white; text-decoration: underline; }
+
+.right_content tr.trs, .right_form tr.trs { background: #bce774; /*黄绿*/ }
+
+.right_content th, .right_content td { color: #000; }
+
+    .right_content th ul, .right_content td ul, .right_content th li, .right_content td li { margin: 0px; padding: 0px; list-style: none; display: inline-block; }
+
+.right_content td { padding-left: 4px; }
+
+.right_content .trh th, .right_content .trh td { color: #FFF; }
+
+.right_content .trh table { margin-left: 10px; width: auto; }
+
+    .right_content .trh table td { border: none; }
+
+    .right_content .trh table tr { background: none; }
+
+.right_content tr span input { width: auto; }
+
+.right_expand, .r_expand, .r_panel { clear: both; margin: 0px auto; width: 99%; line-height: 28px; padding-bottom: 6px; font-size: 14px; }
+
+    .r_panel_nav a,
+    .right_expand a,
+    .r_expand a,
+    .r_panel a { display: inline-block; border: none; padding: 3px 10px 2px 10px; background: #63CCA1; /*绿*/ outline: none; color: #ffffff; font-family: 微软雅黑,宋体; font-size: 15px; text-align: center; text-decoration: none; text-transform: capitalize; -webkit-appearance: none; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+
+        .right_expand a:hover,
+        .r_expand a:hover,
+        .r_panel a:hover { background: #53B68D; }
+
+.r_panel_left { float: left; }
+
+.r_panel_right { float: right; }
+
+.r_panel_nav { line-height: 25px; text-align: right; }
+
+.r_expand { border: 1px #ccc solid; background: #FFF9EC; }
+
+    .r_expand .linkpanel { text-align: right; padding-right: 10px; line-height: 22px; }
+
+        .r_expand .linkpanel a { margin-left: 10px; }
+
+.right_main .r_panel { border-bottom: none; }
+
+.right_expand .linkpanel { margin-top: 5px; text-align: right; padding-right: 10px; line-height: 22px; }
+
+    .right_expand .linkpanel a { margin-left: 10px; }
+
+.r_panel select,
+.r_expand select,
+.r_panel_nav select,
+.right_expand select { width: 150px; font-size: 15px; }
+
+.r_panel input,
+.r_expand input,
+.r_panel_nav input,
+.right_expand input { font-size: 15px; }
+
+
+    .r_panel input[type="text"],
+    .r_expand input[type="text"],
+    .r_panel_nav input[type="text"],
+    .right_expand input[type="text"] { width: 120px; }
+
+    .r_panel input[type="submit"],
+    .r_expand input[type="submit"],
+    .r_panel_nav input[type="submit"],
+    .right_expand input[type="submit"] { padding: 2px 5px 2px 5px; }
+
+    .r_panel input[type="checkbox"],
+    .r_expand input[type="checkbox"],
+    .r_panel_nav input[type="checkbox"],
+    .right_expand input[type="checkbox"] { width: 25px; }
+
+.r_bottom { clear: both; margin: 10px; padding-right: 10px; text-align: right; line-height: 35px; font-size: 14px; background-color: #F7F7F7; }
+
+    .r_bottom span { font-weight: bold; }
+
+.bt_panel { float: left; }
+
+    .bt_panel span { font-weight: normal; }
+
+    .bt_panel input { width: 70px; }
+/*图片花名册样式 2011-11-18添加*/
+
+.stulist * { }
+
+div.stulist { clear: both; padding: 0px; line-height: 24px; }
+
+.stulist dl { display: block; float: left; margin: 0px 2px 10px 2px; width: 234px; height: 120px; border: 1px dashed #ccc; }
+
+.stulist dt { display: block; float: left; width: 81px; }
+
+.stulist dd { display: block; float: left; width: 150px; margin-left: 2px; }
+
+.stulist a img { width: 81px; height: 108px; margin-top: 5px; border: none; }

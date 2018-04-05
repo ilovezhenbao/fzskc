@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>含表单信息页</title>
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/init.css">
+    <link rel="stylesheet" href="css/form_style.css">
+</head>
+<body>
+<header class='header'>
+    <div class="container">
+        <img src="images/logo2.png" alt="">
+        <button>退出登录</button>
+    </div>
+</header>
+<div class="container maincontainer">
+    <aside class='aside'>
+        <nav class="nav">
+            <ul id="menuList">
+                <!--此处根据打开的链接为li元素添加css的class为active-->
+                <li><a href="#">首页</a></li>
+                <li><a href="#">个人信息</a></li>
+                <li>
+                    <a href="#">资源预约</a>
+
+                </li>
+                <li>
+                    <a href="#">教学管理</a>
+                    <ul class='submenu'>
+                        <li><a href="#">资源管理</a></li>
+                        <li><a href="#">学期管理</a></li>
+                        <li><a href="#">课表管理</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">系统管理</a>
+                    <ul class="submenu">
+                        <li><a href="#">用户管理</a></li>
+                        <li><a href="#">用户添加</a></li>
+                        <li><a href="#">信息发布</a></li>
+                        <li><a href="#">单位设置</a></li>
+                        <li><a href="#">功能管理</a></li>
+                        <li><a href="#">权限管理</a></li>
+                        <li><a href="#">入侵管理</a></li>
+                        <li><a href="#">管理日志</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <article class="article">
+        <!--此处为母版页插入内容的位置-->
+        <div class="resource">
+            <h2>个人信息</h2>
+
+
+
+            <div>
+                <form action="#" method="post">
+                    <table width="450" border="0" bgcolor="#000000" cellspacing="1" cellpadding="2"><!--cellspacing指相邻单元格之间的间距，cellpadding指控制单元格内部文字与边框的边距-->
+                        <tbody>
+                        <tr height="50">
+                            <td align="right" bgcolor="#E6E6E6">工号/学号</td>
+                            <td bgcolor="#E6E6E6">
+                                <span>XXXXXXXXXX</span></td>
+                        </tr>
+                        <tr height="50">
+                            <td width="150" align="right"><label>姓名<span class="msgstr">*</span></label></td>
+                            <td width="300" bgcolor="#E6E6E6">
+                                <input type="text" ></td>
+                        </tr>
+                        <tr height="50">
+                            <td width="150" align="right">性别<span class="msgstr">*</span></td>
+                            <td width="300" bgcolor="#E6E6E6">
+                                <select>
+                                    <option value="">男</option>
+                                    <option value="">女</option>
+                                </select></td>
+                        </tr>
+                        <tr height="50">
+                            <td width="150" align="right">民族<span class="msgstr">*</span></td>
+                            <td width="300" bgcolor="#E6E6E6">
+                                <select>
+                                    <option value="">汉族</option>
+                                    <option value="">X族</option>
+                                </select></td>
+                        </tr>
+                        <tr height="50">
+                            <td align="right" bgcolor="#E6E6E6">电子邮箱<span class="msgstr">*</span></td>
+                            <td bgcolor="#E6E6E6">
+                                <input type="text"></td>
+                        </tr>
+                        <tr height="50">
+                            <td align="right" bgcolor="#E6E6E6">移动电话<span class="msgstr">*</span></td>
+                            <td bgcolor="#E6E6E6">
+                                <input type="text" ></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+
+            <p>这里是信息提示区(建议用比较显眼的颜色，比如红色代表错误信息，绿色代表成功的信息)</p>
+            <div class="button">
+
+                <input type="button" value="提交保存">
+            </div>
+
+        </div>
+
+
+    </article>
+</div>
+<footer class="footer">
+    Eswis 高校学生综合服务平台 资源预约管理系统（2017-10-15 V1.0）粤ICP备XXXX号-1<br/>
+    版权所有：广东时正信息科技有限公司；华南师范大学；版权使用：广州市新穗学校<br/>
+    单位联系方式：广东省广州市海珠区石榴岗路15号 邮政编码：510315
+</footer>
+<script>
+    window.onload=function(){
+        var aside=document.getElementsByClassName('aside')[0],
+                maincontainer=document.getElementsByClassName('maincontainer')[0];
+        aside.style.height=maincontainer.offsetHeight+'px';
+        var active=document.getElementById('menuList').getElementsByClassName('active')[0];
+        if(active){
+            active.getElementsByClassName('submenu')[0].style.display='block';
+        }
+    }
+</script>
+
+</body>
+</html>
