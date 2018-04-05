@@ -9,7 +9,7 @@ input[type='text'], input[type='password'], select { border: 1px solid #ddd; bac
 textarea { width: 450px; height: 160px; }
 select { width: 220px; }
 input[type='text'],
-input[type='password'] { width: 200px; }
+input[type='password'] { width: 100px; }
 input[type='checkbox'] { display: none; }
     input[type='checkbox'] + label { background: #fff; padding: 4px 8px; margin-right: 8px; border: 1px solid #ddd; border-radius: 4px; white-space: nowrap; -moz-user-select: none; -khtml-user-select: none; user-select: none; }
     input[type='checkbox']:checked + label { background: #36B6BB; color: #fff; border-color: #F0F3F5; border-radius: 4px; }
@@ -21,8 +21,6 @@ table { border-collapse: collapse; margin: 20px auto; width: 91%; }
 th { background: #4EC6A7; padding: 5px; font-size: 14px;   border: 2px solid #ccc; border-bottom: 1px;white-space: nowrap; }
 tr { border: 2px solid #ccc; line-height: 26px; }
 td { white-space: nowrap;font-size: 14px; padding: 2px 8px; }
-    td a { color: #237BF0 }
-    td input[type='checkbox'] { display: block; }
 
 /*table tr:nth-child(odd) td { background: #CBEDDE; }
 table tr:nth-child(even) td { background: #E3F5ED; }*/
@@ -30,6 +28,6 @@ table tr:nth-child(even) td { background: #E3F5ED; }*/
 dd > table > tbody > tr > td { background: #FFF; }
 .right_content .trh table { margin: 0px; margin-left: 10px; width: auto; border: none; border-collapse: collapse; text-align: center; }
     .right_content .trh table td, .right_content .trh table tr { border: none; }
-        .right_content .trh table td a { display: block; width: 22px; font-weight: bold; font-size: 16px; }
+        .right_content .trh table td a { display: block; width: 22px; font-weight: bold; font-size: 15px; }
         .right_content .trh table td span { color: red; font-weight: bold; font-size: 16px; }
     .right_content .trh table tr { background: none; }
